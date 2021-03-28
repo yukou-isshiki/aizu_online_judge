@@ -1,0 +1,10 @@
+import math
+input_list = input().split(" ")
+pencil_amount = int(input_list[0])
+A = int(input_list[1])
+B = int(input_list[2])
+C = int(input_list[3])
+D = int(input_list[4])
+A_value = B * math.ceil(pencil_amount / A)
+C_value = D * math.ceil(pencil_amount / C)
+print(min(A_value, C_value))
